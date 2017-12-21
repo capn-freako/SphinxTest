@@ -1,11 +1,12 @@
 """ A simple test case, illustrating a Sphinx bug. """
 
 import sys
+from traits.api import HasTraits, Int
 
-class SphinxTest(object):
+class SphinxTest(HasTraits):
     """ Class docstring. """
 
-    cAtt = int(1)  #: A class attribute.
+    cAtt = Int(1)  #: A class attribute.
 
     def __init__(self):
         """ Instance docstring. """
